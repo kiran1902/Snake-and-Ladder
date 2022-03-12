@@ -12,6 +12,7 @@ int DiceRolled = random.Next(7);   //class to generate randome number from 1 - 6
 Console.WriteLine("Number of times the dice was Rolled : " + DiceRolled);
 
 int PosPlayer = 0;
+Random random = new Random();   
 int ResultSnake = random.Next(4); //class to generate randome number from 1 - 3
 
 if (ResultSnake == Ladder)
