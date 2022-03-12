@@ -42,9 +42,6 @@ while (PosPlayer < 100)
         Console.WriteLine("Player Current Position : " + PosPlayer);
         
     }
-    else
-    {
-        Console.WriteLine("No Play");
-    }
+ 
 }
 
