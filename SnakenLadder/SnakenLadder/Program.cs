@@ -30,13 +30,13 @@ while (PosPlayer < 100)
     }
     else if (ResultSnake == Snake)
     {
-        if (PosPlayer + DiceRolled <= 0)
+        if (PosPlayer + DiceRolled >= 0)
         {
-            PosPlayer = 0;
+            PosPlayer = PosPlayer - DiceRolled;
         }
         else
         {
-            PosPlayer = PosPlayer - DiceRolled;
+            PosPlayer = 0;
         }
         Console.WriteLine("Snake");
         Console.WriteLine("Player Current Position : " + PosPlayer);
