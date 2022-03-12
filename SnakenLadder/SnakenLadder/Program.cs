@@ -8,9 +8,12 @@ const int NoPlay = 3;
 
 int PosPlayer = 0;
 int Player = 1;
+int NumofDiceRolled = 0;
+
 while (PosPlayer < 100)
 {
     PosPlayer++;
+    NumofDiceRolled++;
     Random random = new Random();      //initiatizlize the random class
     int DiceRolled = random.Next(7);   //class to generate randome number from 1 - 6
     Console.WriteLine("Number of times the dice was Rolled : " + DiceRolled);
@@ -42,6 +45,9 @@ while (PosPlayer < 100)
         Console.WriteLine("Player Current Position : " + PosPlayer);
         
     }
- 
+    else
+    {
+        Console.WriteLine("No Play");
+    }
 }
-
+Console.WriteLine("Number Of time the dice was rolled : " + NumofDiceRolled);
