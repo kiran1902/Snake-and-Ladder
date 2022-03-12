@@ -10,6 +10,7 @@ int PosPlayer = 0;
 int Player = 1;
 while (PosPlayer < 100)
 {
+    PosPlayer++;
     Random random = new Random();      //initiatizlize the random class
     int DiceRolled = random.Next(7);   //class to generate randome number from 1 - 6
     Console.WriteLine("Number of times the dice was Rolled : " + DiceRolled);
